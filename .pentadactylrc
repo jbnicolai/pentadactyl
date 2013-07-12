@@ -1,0 +1,11 @@
+set vb
+set! browser.tabs.closeWindowWithLastTab=false
+map j 10<C-e>
+map k 10<C-y>
+map <S-j> <C-p>
+map <S-k> <C-n>
+set hlfind
+set newtab+=help
+set showtabline=multitab
+set editor='mvim'
+
