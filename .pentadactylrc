@@ -9,3 +9,22 @@ set newtab+=help
 set showtabline=multitab
 set editor='mvim'
 
+"reddit
+set passkeys+="reddit\.com":achijklsxz[]p?.rfF<Return>
+
+"gmail
+set passkeys+='mail\.google\.com':c/jkhnpovuelxsfra#`[]z?*nrtgidIU+-=<Tab><Return>
+
+"gcal
+set passkeys+="https://www\.google\.com/calendar":jk12345qc
+
+"github
+set passkeys+=github.com:"<CR>r?jks"
+
+"gsearch
+set passkeys+='^https?://google.com/#hl':<Up><Down><Esc>
+set passkeys+='^https?://google.com/webhp':<Up><Down><Esc>
+set passkeys+='^https?://google.com/search':<Up><Down><Esc>
+autocmd LocationChange www\.google\.com/search :nmap -builtin j <Down>
+autocmd LocationChange www\.google\.com/search :nmap -builtin k <Up>
+autocmd LocationChange www\.google\.com/search :nmap -builtin / gi
